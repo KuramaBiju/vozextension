@@ -1,0 +1,17 @@
+{
+    "name": "VozManager",
+    "version": "1.0",
+    "description": "VozManager",
+    "permissions": ["storage", "tabs", "activeTab", "background"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["voz.js"],
+        "run_at": "document_start",
+        "all_frames": true
+    }],
+    "icons": {
+        "128": "128.png"
+    },
+
+    "manifest_version": 2
+}
